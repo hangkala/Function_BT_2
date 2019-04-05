@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt('nhap so');
+    kq = tinhGiaithua(num);
+    alert(kq);
+    function tinhGiaithua(x) {
+        let kq = 1;
+        for (let i = x; i > 0; i--){
+            kq = kq*i;
+        } return kq;
+    }
+</script>
+</body>
+</html>

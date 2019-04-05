@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<button onclick="checkSymbol()">Button</button>
+<body>
+<script>
+        let str = prompt('Nhập mảng');
+        let x = checkSymbol();
+        alert(x);
+
+function checkSymbol() {
+    let symbol = prompt('Nhập 1 ký tự bạn muốn check');
+    let count = 0;
+    let dung = false;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === symbol) {
+            count = count + 1;
+            dung = true;
+        }
+    }
+    if (!dung) alert('-1');
+    return count;
+}
+
+</script>
+</body>
+</html>
